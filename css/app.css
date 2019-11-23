@@ -1,0 +1,66 @@
+
+body {
+    background-image: url(../imgs/2019-07-08_1547107481.JPG);
+    background-repeat: no-repeat;
+    background-position: center;  
+}
+
+.tela {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(43, 41, 41, 0.301);
+}
+
+.personagens {
+    padding: 0 10px;
+    overflow-y: scroll;
+    max-height: 500px;
+}
+
+.personagem-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #aaa;
+    padding: 10px 0;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.personagem-info:hover {
+    background-color: #f3f3f3;
+}
+
+.personagem-info img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.personagem-info span {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.personagem-info .esquerda {
+    display: flex;
+    align-items: center;
+}
+
+.personagem-info .direita .apagar {
+    color: rgb(170, 84, 84);
+    margin-left: 10px;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.personagem-info .direita .apagar:hover {
+    font-size: 1.5rem;
+}
+
+.maior-gs {
+    border: 1px solid rgb(197, 66, 66);
+    color: rgb(197, 66, 66);
+}

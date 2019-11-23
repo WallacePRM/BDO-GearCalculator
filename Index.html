@@ -1,0 +1,93 @@
+<html>
+
+<head>
+    <title>GS Calculator</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="tela">
+        <form id="formPersonagem" class="formulario">
+            <div class="dados">
+                <div class="linha">
+                    <div class="coluna">
+                        <label>Nick</label>
+                        <input name="nick" type="text">
+                    </div>
+                </div>
+                <div class="linha">
+                    <div class="coluna">
+                        <label>Class</label>
+                        <select name="classes">
+                            <option value="warrior">Warrior</option>
+                            <option value="berserker">Berserker</option>
+                            <option value="sorcerer">Sorcerer</option>
+                            <option value="witch">Witch</option>
+                            <option value="mage">Mage</option>
+                            <option value="darkknight">Dark Knight</option>
+                            <option value="kunoichi">Kunoichi</option>
+                            <option value="ninja">Ninja</option>
+                            <option value="ranger">Ranger</option>
+                            <option value="archer">Archer</option>
+                            <option value="shai">Shai</option>
+                            <option value="lahn">Lanh</option>
+                            <option value="striker">Striker</option>
+                            <option value="valkyrie">Valkyrie</option>
+                            <option value="mystic">Mystic</option>
+                            <option value="musah">Musah</option>
+                            <option value="maehwa">Maehwa</option>
+                            <option value="tamer">Tamer</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="linha">
+                    <div class="coluna">
+                        <label>PA</label>
+                        <input name="PA" type="number">
+                    </div>
+                    <div class="coluna">
+                        <label>PA (Awakened)</label>
+                        <input name="PAD" type="number">
+                    </div>
+                    <div class="coluna">
+                        <label>PD</label>
+                        <input name="PD" type="number">
+                    </div>
+                </div>
+                <div class="linha">
+                    <div class="coluna">
+                        <button onclick="addPersonagem(event)" class="button">Adicionar</button>
+                    </div>
+                </div>
+            </div>
+            <hr/>
+            <div class="personagens">
+                <h2>Characters</h2>
+                <!--
+                <div class="personagem-info">
+                    <div class="esquerda">
+                        <img src="https://www.uhdpix.com/images/60c52a02b2f851c3e5d6e54bf9c4c730.md.png">
+                        <span>Nick</span>
+                    </div>
+                    <div class="direita">
+                        <span>GS: </span> <span  class="gs">540</span>
+                        <i class="fa fa-trash apagar" aria-hidden="true"></i>
+                    </div>
+                </div>
+                -->
+            </div>
+        </form>
+    </div>
+
+    <script src="js/appdata.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
