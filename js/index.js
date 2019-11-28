@@ -172,6 +172,57 @@ function criarHtmlPersonagem(dados) {
     $personagens.append(html);
 }
 
+function rotacionarImagens() {
+
+    var imagens = $('.img-fundo').toArray();
+
+    for (var i = 0; i < imagens.length; i++) {
+
+        var mx = $(imagens[i]);
+        var my;
+
+        if (i < imagens.length - 1)
+            my = $(imagens[i + 1]);
+        else
+            my = $(imagens[0]);
+
+        if (mx.is('.fadeIn')) {
+            mx.removeClass('fadeIn').addClass('fadeOut');
+            my.removeClass('fadeOut').addClass('fadeIn');
+            break;
+        }
+    }
+    return;
+
+    /*
+    var m1 = $('.m1');
+    var m2 = $('.m2');
+    var m3 = $('.m3');
+    var m4 = $('.m4');
+
+    if (m1.is('.fadeIn')) {
+        m1.removeClass('fadeIn').addClass('fadeOut');
+        m2.removeClass('fadeOut').addClass('fadeIn');
+    }
+    else if (m2.is('.fadeIn')) {
+        m2.removeClass('fadeIn').addClass('fadeOut');
+        m3.removeClass('fadeOut').addClass('fadeIn');
+    }
+    else if (m3.is('.fadeIn')) {
+        m3.removeClass('fadeIn').addClass('fadeOut');
+        m4.removeClass('fadeOut').addClass('fadeIn'); 
+    }
+    else if (m4.is('.fadeIn')) {
+        m4.removeClass('fadeIn').addClass('fadeOut');
+        m1.removeClass('fadeOut').addClass('fadeIn');
+    }
+    */
+}
+
+//Iniciando
+
 carregarDados();
 exibirPersonagens();
 maiorGs();
+
+setInterval(rotacionarImagens, 10000);
