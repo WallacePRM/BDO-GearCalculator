@@ -35,63 +35,66 @@ function addPersonagem(event) {
         return;
     }
 
+    /* Verificar se o valor de 'classes' condiz com a classe e
+    adicionar o icone de classe conforme o resultado */
+
     var linkClasse = null;
     if (form.classes.value === 'mage') {
-        linkClasse = 'https://www.uhdpix.com/images/449084549abe82c5f04c21b90ac9ef5e.md.png';
+        linkClasse = './imgs/classes/mage.png';
     } 
     else if (form.classes.value === 'kunoichi') {
-        linkClasse = 'https://www.uhdpix.com/images/60c52a02b2f851c3e5d6e54bf9c4c730.md.png';
+        linkClasse = './imgs/classes/kunoichi.png';
     }
     else if (form.classes.value === 'sorcerer') {
-        linkClasse = 'https://bddatabase.net/forum/download/file.php?avatar=2449_1469300309.png';
+        linkClasse = './imgs/classes/sorcerer.png';
     }
     else if (form.classes.value === 'warrior') {
-        linkClasse = 'https://i.pinimg.com/564x/fd/dc/32/fddc32cc38a7bacb5fdc2d60a4f189f0.jpg';
+        linkClasse = './imgs/classes/warrior.png';
     }
     else if (form.classes.value === 'berserker') {
-        linkClasse = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7Ug12kYv9mLmf5NTRl9pvdyY26Fgtz1czGIdOZXg5CDTCSUA2';
+        linkClasse = './imgs/classes/berserker.png';
     }
     else if (form.classes.value === 'witch') {
-        linkClasse = 'https://ih0.redbubble.net/image.284858381.3334/raf,360x360,075,t,fafafa:ca443f4786.jpg';
+        linkClasse = './imgs/classes/witch.png';
     }
     else if (form.classes.value === 'ninja') {
-        linkClasse = 'https://res.cloudinary.com/teepublic/image/private/s--adm3SnW9--/t_Resized%20Artwork/c_fit,g_north_west,h_954,w_954/co_191919,e_outline:48/co_191919,e_outline:inner_fill:48/co_ffffff,e_outline:48/co_ffffff,e_outline:inner_fill:48/co_bbbbbb,e_outline:3:1000/c_mpad,g_center,h_1260,w_1260/b_rgb:eeeeee/c_limit,f_jpg,h_630,q_90,w_630/v1499278659/production/designs/1715847_0.jpg';
+        linkClasse = './imgs/classes/ninja.png';
     }
     else if (form.classes.value === 'darkknight') {
-        linkClasse = 'https://akamai-webcdn.blackdesertonline.com/bdo/operation/news/darkknight/darkknight_symbol.png';
+        linkClasse = './imgs/classes/darkknight.png';
     }
     else if (form.classes.value === 'ranger') {
-        linkClasse = 'https://res.cloudinary.com/teepublic/image/private/s--wsiXnpOc--/t_Resized%20Artwork/c_fit,g_north_west,h_954,w_954/co_000000,e_outline:48/co_000000,e_outline:inner_fill:48/co_ffffff,e_outline:48/co_ffffff,e_outline:inner_fill:48/co_bbbbbb,e_outline:3:1000/c_mpad,g_center,h_1260,w_1260/b_rgb:eeeeee/c_limit,f_jpg,h_630,q_90,w_630/v1487260108/production/designs/1228227_2.jpg';
+        linkClasse = './imgs/classes/ranger.png';
     }
     else if (form.classes.value === 'archer') {
-        linkClasse = 'https://i.imgur.com/p6VUqM4.png';
+        linkClasse = './imgs/classes/archer.png';
     }
     else if (form.classes.value === 'shai') {
-        linkClasse = 'https://s1.playblackdesert.com/web/Static/Upload/News/5853bd9fe9420190619073933517.png';
+        linkClasse = './imgs/classes/shai.png';
     }
     else if (form.classes.value === 'lahn') {
-        linkClasse = 'https://ih0.redbubble.net/image.701597012.8850/flat,1000x1000,075,f.jpg';
+        linkClasse = './imgs/classes/lahn.png';
     }
     else if (form.classes.value === 'striker') {
-        linkClasse = 'https://akamai-webcdn.blackdesertonline.com/bdo/operation/news/striker/striker_symbol.png';
+        linkClasse = './imgs/classes/striker.png';
     }
     else if (form.classes.value === 'valkyrie') {
-        linkClasse = 'https://www.nicepng.com/png/detail/160-1601070_black-desert-online-logo-valkyrie-02-png-emblem.png';
+        linkClasse = './imgs/classes/valkyrie.png';
     }
     else if (form.classes.value === 'mystic') {
-        linkClasse = 'https://i.imgur.com/WGhhw9a.png';
+        linkClasse = './imgs/classes/mystic.png';
     }
     else if (form.classes.value === 'musah') {
-        linkClasse = 'https://banner2.cleanpng.com/20180619/eyu/kisspng-black-desert-online-playerunknown-s-battlegrounds-black-desert-5b28e9386b5959.6670516515294078004397.jpg';
+        linkClasse = './imgs/classes/musah.png';
     }
     else if (form.classes.value === 'maehwa') {
-        linkClasse = 'https://static-cdn.jtvnw.net/jtv_user_pictures/fb8a7713-911a-459f-95da-75efc9e54d14-profile_image-300x300.png';
+        linkClasse = './imgs/classes/maehwa.png';
     }
     else if (form.classes.value === 'tamer') {
-        linkClasse = 'https://ih0.redbubble.net/image.294568259.0434/ap,550x550,12x12,1,transparent,t.png';
+        linkClasse = './imgs/classes/tamer.png';
     }
 
-    
+    //Criando o objeto personagens e atribuindo valores
 
     var personagem = {
         nick: nick,
