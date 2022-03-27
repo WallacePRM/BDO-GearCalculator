@@ -1,3 +1,3 @@
-# GSCalculator
+# BDO-GearCalculator
 
-Link: https://wallaceprm.github.io/GSCalculator/
+Link: https://wallaceprm.github.io/BDO-GearCalculator/
