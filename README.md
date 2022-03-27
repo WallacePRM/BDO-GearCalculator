@@ -1,3 +1,3 @@
 # GSCalculator
 
-Link: https://inextzbgd.github.io/GSCalculator/
+Link: https://wallaceprm.github.io/GSCalculator/
